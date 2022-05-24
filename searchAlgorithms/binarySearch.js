@@ -10,7 +10,7 @@ function binarySearch(arr, target){
     while (left <= right){
   
       // use math.floor() because the value received won't be a float index, so we have to convert the float point value to a int one. 
-      let mid = Math.floor((left + right) / 2);
+      let mid = Math.floor(left + (right - left) / 2);
       if (sortedArray[mid] === target) return mid;
   
       if (sortedArray[mid] < target){
